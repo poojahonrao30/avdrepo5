@@ -6,7 +6,8 @@ on:
    push: 
       
       branches:
-          -main
+          
+          - main
 
 jobs:
      demo-jobs:
@@ -15,4 +16,4 @@ jobs:
            - name: checkout code
              uses: actions/checkout@v2
            - name: print message
-             runs: echo "welcome to github action"
+             run: echo "welcome to github action"
